@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+form {
+	margin: 24px;
+}
+
+.row {
+	white-space: nowrap; /* Just in case. */
+	height: calc(100vw/16);
+	max-height: 32px;
+}
+.cell {
+	cursor: pointer;
+	border: 1px solid black;
+    width: calc(100vw/16);
+    height: calc(100vw/16);
+    max-width: 32px;
+    max-height: 32px;
+	display: inline-block;
+}
+
+.result {
+    padding-bottom: 24px;
+    padding-left: 24px;
+}
+
+.resultRow {
+	white-space: nowrap; /* Just in case. */
+    height: 1px;
+}
+
+.pixel {
+    height: 1px;
+    width: 1px;
+    display: inline-block;
+}
+
+.color {
+    display: inline-block;
+    width: calc(100vw/10);
+    height: calc(100vw/10);
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.color.active {
+	outline: 1px solid black;
+}
+
+.lastColors {
+	max-width: 640px;
+}
